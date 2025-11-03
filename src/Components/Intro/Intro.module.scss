@@ -1,20 +1,19 @@
 @use "../../variables.scss" as *;
 
-.headerContainer {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  
+.introContainer {
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem 1rem;
-  gap: 0.1rem;
+  padding: 0 $padding-medium;
   background-color: $program-orange;
   color: white;
+
+  h1,
+  h2,
+  p {
+    margin: $margin-small 0;
+  }
 }

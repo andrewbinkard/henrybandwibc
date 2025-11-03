@@ -4,6 +4,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import NavBar from "./Components/NavBar";
 import HenryGroupImage from "./assets/HMSFullGroupHeader.jpg";
 import styles from "./App.module.scss";
+import SeattleSkyline from "./Components/SeattleSkyline";
 
 const App: FC<{ routes: RouteObject[] }> = ({ routes }) => {
   const element = useRoutes(routes);
@@ -50,6 +51,12 @@ const App: FC<{ routes: RouteObject[] }> = ({ routes }) => {
           src={HenryGroupImage}
           alt="Henry Middle School Band Group"
           className={styles.groupImage}
+        />
+      </div>
+      <div className={styles.skylineWrapper}>
+        <SeattleSkyline
+          fill={"var(--program-green)"}
+          className={styles.skylineSVG}
         />
       </div>
 

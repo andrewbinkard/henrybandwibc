@@ -1,9 +1,9 @@
 import { FC } from "react";
-import styles from "./Header.module.scss";
+import styles from "./Intro.module.scss";
 
-const Header: FC = () => {
+const Intro: FC = () => {
   return (
-    <div className={styles.headerContainer}>
+    <div className={styles.introContainer}>
       <h1>Henry Middle School</h1>
       <h2>Honors Band</h2>
       <p>Western International Band Clinic</p>
@@ -13,4 +13,4 @@ const Header: FC = () => {
   );
 };
 
-export default Header;
+export default Intro;
