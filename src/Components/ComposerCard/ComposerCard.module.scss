@@ -1,0 +1,180 @@
+@use "../../variables.scss" as *;
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: $program-orange;
+  color: #ffffff;
+  border-radius: $standard-rounding;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+  width: 85vw;
+  min-width: 316px;
+  margin: 0 auto 2rem auto;
+  box-sizing: border-box;
+
+  /* Parallelogram skew - angled top/bottom with vertical sides */
+  transform: skewY(-3deg) skewX(-1deg);
+  transition: transform 1s ease;
+
+  /* Counter-skew the content to keep it upright */
+  > * {
+    transform: skewY(3deg) skewX(1deg);
+    transition: transform 1s ease;
+  }
+
+  /* Reduce skew when expanded to prevent distortion on tall cards */
+  &.expanded {
+    transform: skewY(-5deg) skewX(-0.5deg);
+
+    > * {
+      transform: skewY(5deg) skewX(0.5deg);
+    }
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .composerImage {
+    width: 33%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: $standard-rounding;
+    align-self: start;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+
+    min-width: 325px;
+
+    @media (max-width: $breakpoint-medium) {
+      align-self: center;
+      width: 50%;
+      margin-bottom: 1rem;
+
+      min-width: 300px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    margin: 0 1rem;
+    padding: 1rem;
+
+    @media (max-width: $breakpoint-medium) {
+      width: 100%;
+      margin: unset;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 $margin-small 0;
+      align-self: start;
+
+      @media (max-width: $breakpoint-medium) {
+        align-self: center;
+      }
+    }
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      padding-bottom: 1rem;
+      align-self: start;
+      font-size: 1.5rem;
+
+      @media (max-width: $breakpoint-medium) {
+        font-size: 1rem;
+        align-self: center;
+      }
+    }
+
+    a {
+      color: $rouse-gold-light;
+      text-decoration: underline;
+      text-decoration-color: $rouse-gold-light;
+      text-underline-offset: 4px;
+      margin-bottom: 0.5rem;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: color 0.2s ease;
+      font-size: 1.25rem;
+      padding-bottom: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: $breakpoint-medium) {
+        white-space: normal;
+        align-self: center;
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      color: white;
+      text-align: justify;
+      hyphens: auto;
+
+      max-width: 100%;
+      box-sizing: border-box;
+
+      /* Animate expanded paragraphs */
+      animation: fadeIn 1s ease;
+
+      @media (max-width: $breakpoint-medium) {
+        text-align: justify;
+        hyphens: auto;
+      }
+    }
+  }
+
+  .readMoreButton {
+    margin-top: 1rem;
+    border: 2px solid white;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.15);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus-visible {
+      box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+/* Fade-in animation for expanded content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
