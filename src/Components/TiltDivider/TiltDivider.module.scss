@@ -1,0 +1,24 @@
+/* Transparent wrapper that crops the SVG to the given height */
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Make child span the viewport even inside a centered layout */
+.fullBleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

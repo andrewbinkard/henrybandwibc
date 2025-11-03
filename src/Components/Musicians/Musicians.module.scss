@@ -1,0 +1,11 @@
+@use "../../variables.scss" as *;
+
+.container {
+  background-color: $program-orange;
+  padding-top: $padding-small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $padding-xlarge;
+  padding-bottom: $padding-xlarge;
+}
