@@ -12,7 +12,9 @@ export const conductorData: ConductorCardProps[] = [
     title: "Director of Bands",
 
     imgSrc: KatherineNorrisHeadshot,
-    details: `Katherine Norris is in her eighth year at Henry Middle School, where she serves as Director of Bands. She conducts the Honors Band, teaches beginning flute, clarinet, and double reed classes, and assists with the Concert and Symphonic Bands. Under her guidance, Henry ensembles have consistently earned Superior ratings at UIL Concert and Sightreading Evaluation. From 2022 through 2024, the Symphonic Band was recognized as a Citation Winner in The Foundation for Music Education’s Citation of Excellence project and was named Non-Varsity Grand Champion at the North Texas Festival of Distinction. In her first year as Director of Bands, the Honors Band was honored with an invitation to perform at the Western International Band Clinic in Seattle, WA, and was selected as a National Winner in The Foundation for Music Education’s Mark of Excellence Project.
+    details: `Katherine Norris is in her eighth year at Henry Middle School, where she serves as Director of Bands. She conducts the Honors Band, teaches beginning flute, clarinet, and double reed classes, and assists with the Concert and Symphonic Bands. 
+    
+    Under her guidance, Henry ensembles have consistently earned Superior ratings at UIL Concert and Sightreading Evaluation. From 2022 through 2024, the Symphonic Band was recognized as a Citation Winner in The Foundation for Music Education’s Citation of Excellence project and was named Non-Varsity Grand Champion at the North Texas Festival of Distinction. In her first year as Director of Bands, the Honors Band was honored with an invitation to perform at the Western International Band Clinic in Seattle, WA, and was selected as a National Winner in The Foundation for Music Education’s Mark of Excellence Project.
 
     Katherine graduated magna cum laude from the University of Houston in 2018 with a Bachelor’s Degree in Music Education, where she studied with Eddie Green, John Benzer, and David Bertman. While at UH, she served as drum major for the Spirit of Houston Cougar Marching Band, president of the UH chapter of the National Association for Music Education, and was an active member of Kappa Kappa Psi, National Honorary Band Fraternity.
 
@@ -22,7 +24,9 @@ export const conductorData: ConductorCardProps[] = [
     name: "Samuel Sommer",
     title: "Associate Director of Bands",
     imgSrc: SamuelSommerHeadshot,
-    details: `Samuel Sommer is in his third year as an assistant band director at Henry Middle School and teaches beginner trombone, euphonium, tuba, and saxophone classes as well as the Symphonic Band. Under his direction, both the Concert and Symphonic Bands have earned consecutive sweepstakes awards at the UIL Concert and Sight Reading Evaluations. In 2024-25, the Symphonic Band was named Grand Champion of the Non-Varsity Division at the North Texas Festival of Distinction. The band was also awarded the Citation of Excellence from The Foundation for Music Education. Mr. Sommer additionally serves as one of two band coordinators for the Region 32 Band Clinic and Concert.
+    details: `Samuel Sommer is in his third year as an assistant band director at Henry Middle School and teaches beginner trombone, euphonium, tuba, and saxophone classes as well as the Symphonic Band. 
+    
+    Under his direction, both the Concert and Symphonic Bands have earned consecutive sweepstakes awards at the UIL Concert and Sight Reading Evaluations. In 2024-25, the Symphonic Band was named Grand Champion of the Non-Varsity Division at the North Texas Festival of Distinction. The band was also awarded the Citation of Excellence from The Foundation for Music Education. Mr. Sommer additionally serves as one of two band coordinators for the Region 32 Band Clinic and Concert.
 
     A proud alumnus of Texas Tech University, Mr. Sommer graduated summa cum laude with a bachelor’s degree in music education in December 2022. During his time at Texas Tech, he studied under Dr. Sarah McKoin, Dr. Eric Allen, Dr. Andrew Stetson, and Professor James T. Decker. His dedication and talent led him to serve as principal tenor, and bass trombonist in the Texas Tech Symphonic Wind Ensemble and University Symphony Orchestra.
 
@@ -35,7 +39,9 @@ export const conductorData: ConductorCardProps[] = [
     name: "Jorge Rivera",
     title: "Associate Director of Bands",
     imgSrc: JorgeRiveraHeadshot,
-    details: `Jorge Rivera is in his second year as an Assistant Band Director at Henry Middle School and is thrilled to be part of such a strong and supportive program. He feels extremely fortunate to work alongside dedicated colleagues, he is grateful for the opportunity to continue growing as an educator while contributing to the success of the Henry Middle School Band.
+    details: `Jorge Rivera is in his second year as an Assistant Band Director at Henry Middle School and is thrilled to be part of such a strong and supportive program. He teaches beginner trumpet, French horn, and clarinet classes as well as the Concert Band. 
+    
+    He feels extremely fortunate to work alongside dedicated colleagues, he is grateful for the opportunity to continue growing as an educator while contributing to the success of the Henry Middle School Band.
 
     At Henry Middle School, Mr. Rivera teaches the beginner trumpet, French horn, and clarinet classes, as well as the Concert Band. In his first year, the Concert Band earned the Sweepstakes Award at the UIL Concert and Sight-Reading Evaluations. Most recently, the band program was honored with the Citation of Excellence from The Foundation for Music Education, marking the first time in several years that the Henry MS Concert Band has received this prestigious recognition.
 
@@ -78,7 +84,9 @@ export const conductorData: ConductorCardProps[] = [
     name: "Cynthia Lansford",
     title: "Assistant Director of Bands",
     imgSrc: CynthiaLansfordHeadshot,
-    details: `Cindy Lansford is a 1976 graduate of Texas Tech University with a Bachelor of Music Education degree with a master's degree in Educational Administration from East Texas State University. She taught both at the middle and high school levels in Birdville ISD, Plano ISD and Goose Creek Consolidated ISD. Ms. Lansford was named “Teacher of the Year” both at Carpenter Middle School and North Ridge Middle School. She served on the Texas U.I.L. Prescribed Music List selection committee and frequently served her regions in leadership positions. 
+    details: `Cindy Lansford is a 1976 graduate of Texas Tech University with a Bachelor of Music Education degree with a master's degree in Educational Administration from East Texas State University. She taught both at the middle and high school levels in Birdville ISD, Plano ISD and Goose Creek Consolidated ISD.
+    
+    Ms. Lansford was named “Teacher of the Year” both at Carpenter Middle School and North Ridge Middle School. She served on the Texas U.I.L. Prescribed Music List selection committee and frequently served her regions in leadership positions. 
 
     Bands under her direction have received recognition at the local, state, and national levels. North Ridge Middle School (BISD) was the first band recognized by TBA as an Exemplary Program. They performed at the 2005 Midwest International Band and Orchestra Clinic in Chicago. In 2008, Ms. Lansford received the Meritorious Achievement Award from the Texas Bandmasters Association.
 

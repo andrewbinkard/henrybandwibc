@@ -77,12 +77,12 @@ const NavBar: FC = () => {
             Musicians
           </NavLink>
           <NavLink
-            to="/directors"
+            to="/conductors"
             className={({ isActive }) =>
               isActive ? styles.activeLink : undefined
             }
           >
-            Directors
+            Conductors
           </NavLink>
           <NavLink
             to="/about"
@@ -166,13 +166,13 @@ const NavBar: FC = () => {
             Musicians
           </NavLink>
           <NavLink
-            to="/directors"
+            to="/conductors"
             className={({ isActive }) =>
               isActive ? styles.activeLink : undefined
             }
             onClick={toggleMobileMenu}
           >
-            Directors
+            Conductors
           </NavLink>
           <NavLink
             to="/private-lesson-faculty"
