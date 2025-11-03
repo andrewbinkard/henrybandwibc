@@ -1,8 +1,9 @@
 import { FC } from "react";
-import Header from "../../../Features/Header";
+import Intro from "../../../Components/Intro";
 import TiltDivider from "../../../Components/TiltDivider";
 import ConcertAccordion from "../../../Components/ConcertAccordion";
-import Musicians from "../../../Components/Musicians/Musicians";
+import Musicians from "../../../Components/Musicians";
+import Conductors from "../../../Components/Conductors";
 
 const MainPage: FC = () => {
   return (
@@ -12,7 +13,7 @@ const MainPage: FC = () => {
         bandColor={"var(--program-yellow)"}
         bottomColor={"var(--program-orange)"}
       />
-      <Header />
+      <Intro />
       <TiltDivider
         topColor={"var(--program-orange)"}
         bandColor={"var(--program-yellow)"}
@@ -25,6 +26,12 @@ const MainPage: FC = () => {
         bottomColor={"var(--program-orange)"}
       />
       <Musicians />
+      <TiltDivider
+        topColor={"var(--program-orange)"}
+        bandColor={"var(--program-yellow)"}
+        bottomColor={"var(--program-green)"}
+      />
+      <Conductors />
     </div>
   );
 };

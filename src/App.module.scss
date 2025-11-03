@@ -1,8 +1,11 @@
+@import "./variables.scss";
+
 .centeredLayout {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .navBarWrapper {
@@ -47,7 +50,7 @@
 
 .imageContainer {
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   height: auto;
 
@@ -72,15 +75,57 @@
   position: relative;
 }
 
-/* Gradient overlay at the bottom - fades to program green */
+/* Fade to green at bottom of image */
 .imageContainer::after {
   content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 30%;
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--program-green) 100%);
+  height: 50%;
+  background: linear-gradient(
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 20%,
+    rgba(0, 0, 0, 0.25) 35%,
+    rgba(0, 0, 0, 0.45) 50%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.7) 70%,
+    mix($page-black, $program-green, 60%) 80%,
+    mix($page-black, $program-green, 30%) 90%,
+    $program-green 100%
+  );
   pointer-events: none;
   z-index: 1;
+}
+
+.skylineWrapper {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+
+  .skylineSVG {
+    width: auto;
+    height: 120px;
+    margin-top: -120px;
+
+    @media (max-width: 1024px) {
+      height: 100px;
+      margin-top: -100px;
+    }
+
+    @media (max-width: 768px) {
+      height: 80px;
+      margin-top: -80px;
+    }
+
+    @media (max-width: 480px) {
+      height: 60px;
+      margin-top: -60px;
+    }
+
+    @media (max-width: 320px) {
+      height: 40px;
+      margin-top: -40px;
+    }
+  }
 }

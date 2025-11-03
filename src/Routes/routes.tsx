@@ -1,6 +1,7 @@
 import { RouteObject } from "react-router-dom";
 import LandingPage from "../Pages/MainPage/MainPage/MainPage";
-import About from "../Pages/MainPage/About";
+import About from "../Pages/AboutPage";
+import MusiciansPage from "../Pages/MusiciansPage/MusiciansPage";
 
 export const routes: RouteObject[] = [
   {
@@ -10,5 +11,9 @@ export const routes: RouteObject[] = [
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/musicians",
+    element: <MusiciansPage />,
   },
 ];
