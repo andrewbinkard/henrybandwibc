@@ -8,12 +8,26 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000;
+  background-color: inherit;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* CSS Custom Properties for runtime use */
+  --program-green: #{$program-green};
+  --program-yellow: #{$program-yellow};
+  --program-yellow-dark: #{$program-yellow-dark};
+  --program-orange: #{$program-orange};
+  --program-orange-dark: #{$program-orange-dark};
+  --program-cream: #{$program-cream};
+  --page-black: #{$page-black};
+
+  /* Optional section tokens */
+  --section-top: var(--page-black);
+  --section-bottom: var(--page-black);
+  --section-band: var(--program-cream);
 }
 
 a {
@@ -37,34 +51,33 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid white;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: inherit;
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
 }
-button:hover {
-  border-color: #646cff;
-}
+
+button:hover,
 button:focus,
+button:active,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.1);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
