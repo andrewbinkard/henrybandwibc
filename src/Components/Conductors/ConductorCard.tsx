@@ -56,11 +56,13 @@ const ConductorCard: FC<ConductorCardProps> = ({
 
   return (
     <div className={styles.cardContainer} ref={cardRef} onClick={handleClick}>
-      <img
-        src={imgSrc}
-        alt={`Image of ${name}`}
-        className={styles.conductorImage}
-      />
+      {imgSrc && (
+        <img
+          src={imgSrc}
+          alt={`Image of ${name}`}
+          className={styles.conductorImage}
+        />
+      )}
       <div className={styles.content}>
         <h3>{name}</h3>
         {title && <h4>{title}</h4>}
