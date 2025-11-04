@@ -3,6 +3,7 @@ import LandingPage from "../Pages/MainPage/MainPage/MainPage";
 import About from "../Pages/AboutPage";
 import MusiciansPage from "../Pages/MusiciansPage/MusiciansPage";
 import ConductorsPage from "../Pages/ConductorsPage/ConductorsPage";
+import PrivateLessonFacultyPage from "../Pages/PrivateLessonFacultyPage/PrivateLessonFacultyPage";
 
 export const routes: RouteObject[] = [
   {
@@ -20,5 +21,9 @@ export const routes: RouteObject[] = [
   {
     path: "/conductors/:directorName?",
     element: <ConductorsPage />,
+  },
+  {
+    path: "/private-lesson-faculty",
+    element: <PrivateLessonFacultyPage />,
   },
 ];
