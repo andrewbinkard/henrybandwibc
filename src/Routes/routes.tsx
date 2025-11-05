@@ -1,9 +1,10 @@
 import { RouteObject } from "react-router-dom";
 import LandingPage from "../Pages/MainPage/MainPage/MainPage";
-import About from "../Pages/AboutPage";
+import AboutProgramPage from "../Pages/AboutProgram";
 import MusiciansPage from "../Pages/MusiciansPage/MusiciansPage";
 import ConductorsPage from "../Pages/ConductorsPage/ConductorsPage";
 import PrivateLessonFacultyPage from "../Pages/PrivateLessonFacultyPage/PrivateLessonFacultyPage";
+import ThankYouPage from "../Pages/ThankYouPage/ThankYouPage";
 
 export const routes: RouteObject[] = [
   {
@@ -12,7 +13,7 @@ export const routes: RouteObject[] = [
   },
   {
     path: "/about",
-    element: <About />,
+    element: <AboutProgramPage />,
   },
   {
     path: "/musicians",
@@ -25,5 +26,9 @@ export const routes: RouteObject[] = [
   {
     path: "/private-lesson-faculty",
     element: <PrivateLessonFacultyPage />,
+  },
+  {
+    path: "/thank-you",
+    element: <ThankYouPage />,
   },
 ];

@@ -1,0 +1,113 @@
+@use "../../variables.scss" as *;
+
+/* -------- Page wrappers (used by parent AboutProgramPage) -------- */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  background-color: $program-orange;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* -------- Personnel section -------- */
+.personnelContainer {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center; /* centers headings, etc. */
+  justify-content: center;
+  background-color: $program-green;
+
+  h2,
+  h3,
+  p {
+    padding: 0 $padding-medium;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: $margin-small;
+  }
+
+  /* keep the big heading from getting too wide */
+  h2 {
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+}
+
+/* Optional outer wrapper you added around the grid to force centering */
+.gridCenter {
+  display: flex;
+  justify-content: center; /* centers the grid element itself */
+  width: 100%;
+}
+
+/* -------- Band directors grid (centered) -------- */
+.bandDirectorsContainer {
+  display: grid;
+  gap: 2rem;
+
+  /* center the whole grid block on the page */
+  width: min(1100px, 100%);
+  margin-inline: auto;
+  padding-inline: $padding-medium;
+
+  /* mobile: single column */
+  grid-template-columns: minmax(0, 1fr);
+
+  /* desktop: exactly two equal, centered columns */
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center; /* centers tracks if extra space remains */
+    align-items: start;
+  }
+
+  /* tighten gaps on smaller desktop widths */
+  @media (min-width: 900px) and (max-width: 1200px) {
+    gap: 1.5rem;
+  }
+
+  /* OPTIONAL: bump to three columns on ultra-wide screens.
+     Remove this block if you want to stay at two columns everywhere. */
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* -------- Individual school block -------- */
+.school {
+  display: block;
+  width: 100%;
+  /* avoid splitting a school across columns if layout changes */
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+
+  /* even vertical rhythm for director names */
+  p {
+    margin: 0.25rem 0;
+  }
+}
+
+/* -------- Print-friendly tweaks -------- */
+@media print {
+  .personnelContainer {
+    background: #fff;
+  }
+
+  .bandDirectorsContainer {
+    grid-template-columns: 1fr 1fr; /* two columns on print */
+    gap: 1rem;
+    width: 100%;
+    padding-inline: 0;
+  }
+}
