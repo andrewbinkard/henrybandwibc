@@ -9,7 +9,7 @@ import { henrySections } from "../../Components/Musicians/const";
 const MusiciansPage: FC = () => {
   return (
     <div className={styles.container}>
-      <h1>MUSICIANS</h1>
+      <h1>Musicians</h1>
       {henrySections.map(({ imgSrc, section, members }, idx) => {
         return (
           <MusiciansCard

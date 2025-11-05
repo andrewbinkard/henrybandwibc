@@ -4,6 +4,7 @@ import TiltDivider from "../../../Components/TiltDivider";
 import ConcertAccordion from "../../../Components/ConcertAccordion";
 import Musicians from "../../../Components/Musicians";
 import Conductors from "../../../Components/Conductors";
+import MainPageButtons from "../../../Components/MainPageButtons";
 
 const MainPage: FC = () => {
   return (
@@ -32,6 +33,12 @@ const MainPage: FC = () => {
         bottomColor={"var(--program-green)"}
       />
       <Conductors />
+      <TiltDivider
+        topColor={"var(--program-green)"}
+        bandColor={"var(--program-yellow)"}
+        bottomColor={"var(--program-orange)"}
+      />
+      <MainPageButtons />
     </div>
   );
 };
