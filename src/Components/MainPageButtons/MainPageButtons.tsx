@@ -17,6 +17,11 @@ const MainPageButtons: FC = () => {
       <Link to={"thank-you"}>
         <button className={styles.mainPageButton}>Thank You!</button>
       </Link>
+      <Link to={"honors-band-2425"}>
+        <button className={styles.mainPageButton}>
+          2024-2025 Henry Honors Band
+        </button>
+      </Link>
     </div>
   );
 };

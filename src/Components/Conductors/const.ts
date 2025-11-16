@@ -82,7 +82,7 @@ export const conductorData: ConductorCardProps[] = [
   },
   {
     name: "Cynthia Lansford",
-    title: "Assistant Director of Bands",
+    title: "Special Guest Conductor",
     imgSrc: CynthiaLansfordHeadshot,
     details: `Cindy Lansford is a 1976 graduate of Texas Tech University with a Bachelor of Music Education degree with a master's degree in Educational Administration from East Texas State University. She taught both at the middle and high school levels in Birdville ISD, Plano ISD and Goose Creek Consolidated ISD.
     

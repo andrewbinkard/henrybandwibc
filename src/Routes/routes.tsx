@@ -5,6 +5,7 @@ import MusiciansPage from "../Pages/MusiciansPage/MusiciansPage";
 import ConductorsPage from "../Pages/ConductorsPage/ConductorsPage";
 import PrivateLessonFacultyPage from "../Pages/PrivateLessonFacultyPage/PrivateLessonFacultyPage";
 import ThankYouPage from "../Pages/ThankYouPage/ThankYouPage";
+import HonorsBand2425 from "../Pages/HonorsBand2425";
 
 export const routes: RouteObject[] = [
   {
@@ -30,5 +31,9 @@ export const routes: RouteObject[] = [
   {
     path: "/thank-you",
     element: <ThankYouPage />,
+  },
+  {
+    path: "/honors-band-2425",
+    element: <HonorsBand2425 />,
   },
 ];
