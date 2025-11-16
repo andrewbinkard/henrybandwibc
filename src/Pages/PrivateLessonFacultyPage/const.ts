@@ -17,6 +17,7 @@ import MikeDoratoHeadshot from "../../assets/Lesson_Faculty/Mike_Dorato.png";
 import AndyRussellHeadshot from "../../assets/Lesson_Faculty/Andy_Russell.png";
 import BrettBlackstoneHeadshot from "../../assets/Lesson_Faculty/Brett_Blackstone.png";
 import DavidHummelHeadshot from "../../assets/Lesson_Faculty/David_Hummel.jpg";
+import BellaScottiHeadshot from "../../assets/Lesson_Faculty/Bella_Scotti.jpg";
 import IvanTracHeadshot from "../../assets/Lesson_Faculty/Ivan_Trac.png";
 
 export const privateLessonTeacherData: ConductorCardProps[] = [
@@ -126,6 +127,12 @@ export const privateLessonTeacherData: ConductorCardProps[] = [
     name: "David Hummel",
     instrument: "Tuba",
     imgSrc: DavidHummelHeadshot,
+    bio: ``,
+  },
+  {
+    name: "Bella Scotti",
+    instrument: "Percussion",
+    imgSrc: BellaScottiHeadshot,
     bio: ``,
   },
   {
