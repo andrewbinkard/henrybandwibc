@@ -11,6 +11,7 @@ const ConductorCard: FC<ConductorCardProps> = ({
   instrument,
   bio,
 }) => {
+  const isDirector = !!title;
   const [expanded, setExpanded] = useState(false); // To toggle bio visibility
   const navigate = useNavigate();
   const cardRef = useRef<HTMLDivElement>(null); // Reference for scrolling
@@ -55,7 +56,11 @@ const ConductorCard: FC<ConductorCardProps> = ({
   };
 
   return (
-    <div className={styles.cardContainer} ref={cardRef} onClick={handleClick}>
+    <div
+      className={styles.cardContainer}
+      ref={cardRef}
+      onClick={isDirector ? handleClick : () => null}
+    >
       {imgSrc && (
         <img
           src={imgSrc}

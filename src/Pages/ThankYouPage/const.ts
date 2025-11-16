@@ -117,3 +117,22 @@ It is a dream come true to get to send our kids over to Vista Ridge and know tha
     content: `You’ve been that voice of guidance for 18 years now! Thank you for taking an excited young flute player under your wing and letting her follow you around. So much of what I know today is because of you! Thank you!!!`,
   },
 ];
+
+export const friendsOfMusicEducation: AcknowledgementsCardProps[] = [
+  {
+    toWhom: "Music and Arts",
+    content: "",
+  },
+  {
+    toWhom: "The Band Connection",
+    content: "",
+  },
+  {
+    toWhom: "The Ivy Family",
+    content: "",
+  },
+  {
+    toWhom: "The Sparrow Family",
+    content: "",
+  },
+];

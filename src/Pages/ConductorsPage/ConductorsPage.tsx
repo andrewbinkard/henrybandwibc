@@ -2,7 +2,7 @@ import { FC, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import styles from "./ConductorsPage.module.scss";
-// import Footer from "../../../Components/Shared/Footer";
+import Footer from "../../Components/Footer";
 import { conductorData } from "../../Components/Conductors/const";
 import ComposerCard from "../../Components/ComposerCard";
 
@@ -33,7 +33,11 @@ const ConductorsPage: FC = () => {
           </div>
         );
       })}
-      {/* <Footer /> */}
+      <Footer
+        backgroundColor="var(--program-orange)"
+        topDividerColor="var(--program-green)"
+        bottomDividerColor="var(--program-orange)"
+      />
     </div>
   );
 };

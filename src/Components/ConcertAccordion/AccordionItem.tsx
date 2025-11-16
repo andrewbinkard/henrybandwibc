@@ -21,6 +21,19 @@ const AccordionItem: FC<AccordionItemProps> = ({
   publisher,
   publisherWebsiteURL,
 }) => {
+  console.log("penguin1", {
+    panelId,
+    title,
+    composer,
+    details,
+    grade,
+    time,
+    conductor,
+    soloist,
+    publisher,
+    publisherWebsiteURL,
+  });
+
   const accordionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

@@ -23,10 +23,10 @@ const ConcertAccordion: FC = () => {
             details,
             conductor,
             year,
-            // grade,
-            // time,
-            // publisher,
-            // publisherWebsiteURL,
+            grade,
+            time,
+            publisher,
+            publisherWebsiteURL,
           }) => (
             <AccordionItem
               key={panelId}
@@ -38,10 +38,10 @@ const ConcertAccordion: FC = () => {
               details={details}
               conductor={conductor}
               year={year}
-              // grade={grade}
-              // time={time}
-              // publisher={publisher}
-              // publisherWebsiteURL={publisherWebsiteURL}
+              grade={grade}
+              time={time}
+              publisher={publisher}
+              publisherWebsiteURL={publisherWebsiteURL}
             />
           )
         )}

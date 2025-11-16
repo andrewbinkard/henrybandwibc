@@ -1,10 +1,9 @@
 import { FC } from "react";
 
 import MusiciansCard from "../../Components/MusiciansCard";
-// import Fxooter from "../../../Components/Shared/Footer";
-// import ImageCarousel from "../../Components/ImageCarousel";
 import styles from "./MusiciansPage.module.scss";
 import { henrySections } from "../../Components/Musicians/const";
+import Footer from "../../Components/Footer";
 
 const MusiciansPage: FC = () => {
   return (
@@ -20,9 +19,12 @@ const MusiciansPage: FC = () => {
           />
         );
       })}
-      {/* <ImageCarousel imgData={wileyCandids} /> */}
 
-      {/* <Footer /> */}
+      <Footer
+        backgroundColor="var(--program-orange)"
+        topDividerColor="var(--program-green)"
+        bottomDividerColor="var(--program-orange)"
+      />
     </div>
   );
 };

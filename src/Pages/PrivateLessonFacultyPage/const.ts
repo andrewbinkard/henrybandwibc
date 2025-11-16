@@ -2,9 +2,9 @@ import { ConductorCardProps } from "../../Components/Conductors/types";
 import RachelKaplanHeadshot from "../../assets/Lesson_Faculty/Rachel_Kaplan.png";
 import BethSpicerHeadshot from "../../assets/Lesson_Faculty/Beth_Spicer.png";
 import AmyBurgusHeadshot from "../../assets/Lesson_Faculty/Amy_Burgus.png";
-// import CoreyCastilloHeadshot from "../../assets/Lesson_Faculty/Corey_Castillo.png";
+import CoreyCastilloHeadshot from "../../assets/Lesson_Faculty/Corey_Castillo.jpg";
 import VeronicaGerhardtHeadshot from "../../assets/Lesson_Faculty/Veronica_Gerhardt.png";
-// import JoshuaPetersonHeadshot from "../../assets/Lesson_Faculty/Joshua_Peterson.png";
+import JoshuaPetersonHeadshot from "../../assets/Lesson_Faculty/Josh_Peterson.png";
 import MarySchaniHeadshot from "../../assets/Lesson_Faculty/Mary_Schani.png";
 import MeganWikeHeadshot from "../../assets/Lesson_Faculty/Megan_Wike.png";
 import CrystalAlexanderHeadshot from "../../assets/Lesson_Faculty/Crystal_Alexander.png";
@@ -41,7 +41,7 @@ export const privateLessonTeacherData: ConductorCardProps[] = [
   {
     name: "Corey Castillo",
     instrument: "Bassoon",
-    imgSrc: "",
+    imgSrc: CoreyCastilloHeadshot,
     bio: ``,
   },
   {
@@ -53,7 +53,7 @@ export const privateLessonTeacherData: ConductorCardProps[] = [
   {
     name: "Joshua Peterson",
     instrument: "Clarinet",
-    imgSrc: "",
+    imgSrc: JoshuaPetersonHeadshot,
     bio: ``,
   },
   {

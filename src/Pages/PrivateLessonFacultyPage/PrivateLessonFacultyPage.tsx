@@ -1,6 +1,6 @@
 import { FC } from "react";
 import ConductorCard from "../../Components/Conductors/ConductorCard";
-// import Footer from "../../../Components/Shared/Footer";
+import Footer from "../../Components/Footer";
 import { privateLessonTeacherData } from "./const";
 import styles from "./PrivateLessonFacultyPage.module.scss";
 
@@ -23,7 +23,11 @@ const PrivateLessonFacultyPage: FC = () => {
           }
         )}
       </div>
-      {/* <Footer /> */}
+      <Footer
+        backgroundColor="var(--program-orange)"
+        topDividerColor="var(--program-green)"
+        bottomDividerColor="var(--program-orange)"
+      />
     </div>
   );
 };
