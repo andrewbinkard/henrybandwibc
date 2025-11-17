@@ -17,7 +17,7 @@ const Conductors: FC = () => {
           );
         })}
       </div>
-      <Link to={"conductors"}>
+      <Link to={"/conductors"}>
         <button>Read Conductor Bios</button>
       </Link>
     </div>
