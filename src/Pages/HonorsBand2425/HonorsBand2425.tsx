@@ -22,11 +22,12 @@ const HonorsBand2425: FC = () => {
           imgSrc={imgSrc}
           roster={roster}
         />
-        <Footer
-          backgroundColor="var(--program-orange)"
-          topDividerColor="var(--program-orange)"
-        />
       </div>
+      <Footer
+        backgroundColor="var(--program-green)"
+        topDividerColor="var(--program-orange)"
+        bottomDividerColor="var(--program-green)"
+      />
     </>
   );
 };

@@ -58,27 +58,25 @@
     text-align: justify;
     hyphens: auto;
     margin-top: 1rem;
-    color: $wiley-gray-light;
+    color: $program-yellow;
     white-space: pre-line;
   }
 
   .readMoreButton {
-    color: $wiley-gray-light;
-    border-color: $wiley-gray-light;
-    background-color: $rouse-red-darkest;
-    border: 2px solid $wiley-gray-light;
+    color: $program-yellow;
+    border-color: $program-yellow;
+    border: 2px solid $program-yellow;
     border-radius: $standard-rounding;
     width: 150px;
     margin-top: 1rem;
 
     &:hover {
-      background-color: $rouse-red;
+      background-color: $program-orange-dark;
     }
 
     &:active {
-      background-color: $rouse-red-darkest;
-      border-color: $wiley-gray-dark;
-      color: $wiley-gray-dark;
+      background-color: $program-orange-dark;
+      border-color: $program-yellow;
     }
   }
 }

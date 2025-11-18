@@ -90,3 +90,8 @@ button:focus-visible {
     background-color: #ffffff;
   }
 }
+
+body,
+body * {
+  text-shadow: 0 0 4px $text-shadow-color;
+}
