@@ -4,7 +4,7 @@ export interface AccordionItemProps {
   handleChange: (event: React.SyntheticEvent, isExpanded: boolean) => void;
   title: string;
   composer: string;
-  details: string;
+  details: JSX.Element;
   grade?: string;
   time?: string;
   year?: string;

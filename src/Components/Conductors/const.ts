@@ -43,7 +43,7 @@ export const conductorData: ConductorCardProps[] = [
     
     He feels extremely fortunate to work alongside dedicated colleagues, he is grateful for the opportunity to continue growing as an educator while contributing to the success of the Henry Middle School Band.
 
-    At Henry Middle School, Mr. Rivera teaches the beginner trumpet, French horn, and clarinet classes, as well as the Concert Band. In his first year, the Concert Band earned the Sweepstakes Award at the UIL Concert and Sight-Reading Evaluations. Most recently, the band program was honored with the Citation of Excellence from The Foundation for Music Education, marking the first time in several years that the Henry MS Concert Band has received this prestigious recognition.
+    In his first year, the Concert Band earned the Sweepstakes Award at the UIL Concert and Sight-Reading Evaluations. Most recently, the band program was honored with the Citation of Excellence from The Foundation for Music Education, marking the first time in several years that the Henry MS Concert Band has received this prestigious recognition.
 
     Mr. Rivera is a graduate of Texas State University, where he earned his bachelor’s degree in Music Education. He studied trumpet under Dr. Keith Winking and performed as principal trumpet with the Texas State Wind Symphony and Symphony Orchestra. In addition, he served as lead trumpet in both the Jazz Ensemble and Salsa del Río. His collegiate experience allowed him the privilege of working under esteemed conductors and directors including Dr. Caroline Beatty, Dr. Jacob Harrison, Dr. Utah Hamrick, and Mr. Juan Rosaly.
 

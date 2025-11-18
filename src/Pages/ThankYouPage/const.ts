@@ -120,12 +120,19 @@ It is a dream come true to get to send our kids over to Vista Ridge and know tha
 
 export const friendsOfMusicEducation: AcknowledgementsCardProps[] = [
   {
+    toWhom: "Strait Music",
+    content: "",
+    url: "https://www.straitmusic.com/",
+  },
+  {
     toWhom: "Music and Arts",
     content: "",
+    url: "https://www.musicarts.com/",
   },
   {
     toWhom: "The Band Connection",
     content: "",
+    url: "https://www.band-connection.com/",
   },
   {
     toWhom: "The Ivy Family",

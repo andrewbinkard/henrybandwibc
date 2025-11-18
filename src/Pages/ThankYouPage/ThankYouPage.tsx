@@ -16,13 +16,14 @@ const ThankYouPage: FC = () => {
       />
       <h1>Thank you!</h1>
       <div className={styles.cardContainer}>
-        {henryThankYouData.map(({ toWhom, content }, idx) => {
+        {henryThankYouData.map(({ toWhom, content, url }, idx) => {
           return (
             <div>
               <AcknowledgementsCard
                 key={idx}
                 toWhom={toWhom}
                 content={content}
+                url={url}
               />
             </div>
           );
@@ -36,13 +37,14 @@ const ThankYouPage: FC = () => {
       <div className={styles.friendsContainer}>
         <h1>Friends of Music Education</h1>
         <div className={clsx(styles.cardContainer, styles.friendsCards)}>
-          {friendsOfMusicEducation.map(({ toWhom, content }, idx) => {
+          {friendsOfMusicEducation.map(({ toWhom, content, url }, idx) => {
             return (
               <div>
                 <AcknowledgementsCard
                   key={idx}
                   toWhom={toWhom}
                   content={content}
+                  url={url}
                 />
               </div>
             );
