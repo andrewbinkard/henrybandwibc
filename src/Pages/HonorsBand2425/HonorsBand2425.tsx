@@ -4,6 +4,8 @@ import AboutProgramCard from "../../Components/AboutProgramCard";
 import styles from "./HonorsBand2425.module.scss";
 import TiltDivider from "../../Components/TiltDivider";
 import Footer from "../../Components/Footer";
+import PageHeader from "../../Components/PageHeader";
+import { THANK_YOU_HEADER_TEXT } from "../const";
 
 const HonorsBand2425: FC = () => {
   const { programName, programInfo, imgSrc, roster } = henryPreviousBandInfo;
@@ -15,7 +17,7 @@ const HonorsBand2425: FC = () => {
         bottomColor={"var(--program-orange)"}
       />
       <div className={styles.container}>
-        <h1>Thank You!</h1>
+        <PageHeader headerText={THANK_YOU_HEADER_TEXT} />
         <AboutProgramCard
           programName={programName}
           programInfo={programInfo}
