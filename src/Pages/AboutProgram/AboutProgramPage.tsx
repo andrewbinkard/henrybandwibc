@@ -5,6 +5,8 @@ import Footer from "../../Components/Footer";
 import styles from "./AboutProgramPage.module.scss";
 import TiltDivider from "../../Components/TiltDivider";
 import LISDDistrictPersonnel from "./LISDDistrictPersonnel";
+import PageHeader from "../../Components/PageHeader";
+import { ABOUT_HEADER_TEXT } from "../const";
 
 const AboutProgramPage: FC = () => {
   return (
@@ -15,7 +17,7 @@ const AboutProgramPage: FC = () => {
         bottomColor="var(--program-orange)"
       />
       <div className={styles.container}>
-        <h1>About</h1>
+        <PageHeader headerText={ABOUT_HEADER_TEXT} />
         <div className={styles.cardContainer}>
           {henryAboutProgramInfo.map(({ programName, programInfo }, idx) => {
             return (

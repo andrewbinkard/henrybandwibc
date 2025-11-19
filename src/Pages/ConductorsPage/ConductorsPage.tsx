@@ -5,6 +5,8 @@ import styles from "./ConductorsPage.module.scss";
 import Footer from "../../Components/Footer";
 import { conductorData } from "../../Components/Conductors/const";
 import ComposerCard from "../../Components/ComposerCard";
+import PageHeader from "../../Components/PageHeader";
+import { CONDUCTORS_HEADER_TEXT } from "../const";
 
 const ConductorsPage: FC = () => {
   const { directorName } = useParams<{ directorName: string }>();
@@ -20,7 +22,7 @@ const ConductorsPage: FC = () => {
 
   return (
     <div className={styles.conductorsContainer}>
-      <h1>Conductors</h1>
+      <PageHeader headerText={CONDUCTORS_HEADER_TEXT} />
       {conductorData.map(({ name, imgSrc, details, title }) => {
         return (
           <div id={name} key={name}>
