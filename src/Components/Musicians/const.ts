@@ -26,7 +26,7 @@ export const henrySections: SectionProps[] = [
   },
   {
     imgSrc: henryDoubleReeds,
-    section: "OBOES",
+    section: "DOUBLE REEDS",
     members: [
       "Kalista Choy",
       "Shruthi Giridhar",
